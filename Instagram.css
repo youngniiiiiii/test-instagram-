@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+body {
+  background-color: rgb(244, 240, 240);
+  width: 100vw;
+  height: 50vw;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2fr;
+  grid-template-rows: 20vh 130vh;
+  grid-template-areas:
+    "header main_top footer"
+    "header main_bottom footer";
+}
+
+header {
+  background-color: white;
+  font-size: 0.9em;
+  font-weight: bold;
+  grid-area: header;
+  border-right: 1px solid rgb(174, 173, 166);
+}
+
+#instagram a img {
+  padding: 10px;
+}
+
+#top {
+  background-color: rgb(244, 240, 240);
+  grid-area: main_top;
+}
+
+#bottom {
+  background-color: rgb(244, 240, 240);
+  grid-area: main_bottom;
+}
+
+footer {
+  background-color: rgb(244, 240, 240);
+  grid-area: footer;
+  padding-right: 50px;
+}
+
+#menu ul li a {
+  color: black;
+  size: 20px;
+  margin: 0 5px 5px 5px;
+  vertical-align: middle;
+}
+
+#menu ul li a img {
+  width: 20px;
+  height: 20px;
+  margin: 5px 15px 0 5px;
+}
+
+#profile {
+  size: 20px;
+  margin: 10px;
+  vertical-align: middle;
+}
+#profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 70%;
+  margin: 5px 15px 0 5px;
+}
+
+#more {
+  size: 20px;
+  margin: 200px 10px;
+  vertical-align: middle;
+}
+#more img {
+  width: 20px;
+  height: 20px;
+  margin: 5px 15px 0 5px;
+}
+/* ---------------------top---------------------- */
+#top {
+  display: inline;
+  font-size: 0.7em;
+  text-align: center;
+  padding-left: 400px;
+  padding-right: 200px;
+}
+#top img {
+  width: 60px;
+  height: 60px;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  background-image: linear-gradient(#444444, #444444),
+    linear-gradient(to right, #fff600, #ff0060, #6c00ff);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  margin: 10px 10px 0 10px;
+}
+
+.fimg {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 30px 0 0 0;
+  border-image-source: url(images/그라데이션.png);
+  border: 1px solid rgb(174, 173, 166);
+  border-radius: 5px;
+}
+
+.fimg div {
+  margin-bottom: 3px;
+}
+
+/* ------------------------bottom--------------------- */
+
+#bottom {
+  background-color: rgb(244, 240, 240);
+  padding-left: 400px;
+  padding-right: 200px;
+}
+
+#total {
+  border: 1px solid rgb(174, 173, 166);
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+}
+
+.writerProfile {
+  width: 481.27;
+  font-size: 0.7em;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.writerimg img {
+  width: 40px;
+  height: 40px;
+  border-radius: 70%;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.writerimg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.writername {
+  display: block;
+}
+
+.writerright {
+  color: rgb(0, 0, 0);
+  font-size: 2.5em;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5px;
+}
+
+.contentImage {
+  text-align: center;
+}
+
+.like img {
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+}
+
+.like {
+  display: flex;
+  justify-content: space-between;
+}
+
+#etc img {
+  width: 20px;
+  height: 20px;
+  margin: 15px 5px 0 5px;
+}
+
+#name {
+  font-weight: bold;
+}
+#reply1 {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 5px;
+}
+
+#etc {
+  color: grey;
+  font-size: 0.9em;
+}
+
+/* ----------------------foofter---------------------- */
+
+#mainProfile {
+  margin: 30px 10px;
+  font-size: 0.9em;
+  display: flex;
+  justify-content: space-between;
+}
+#mainProfile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 70%;
+  margin-right: 10px;
+}
+
+#subProfile {
+  display: flex;
+}
+
+.nickname {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.trans {
+  color: rgb(61, 176, 225);
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.a {
+  font-weight: bold;
+}
+.b {
+  color: grey;
+}
+
+#prefer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+}
+.d {
+  color: grey;
+}
+
+/* ---------------------------------------- */
+
+#otherProfile {
+  font-size: 0.7em;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#otherProfile div img {
+  width: 40px;
+  height: 40px;
+  border-radius: 70%;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.imgProfile {
+  display: flex;
+  align-items: center;
+}
+
+.othername {
+  display: block;
+}
+
+.follow {
+  color: rgb(61, 176, 225);
+  font-weight: bold;
+  margin-top: auto;
+  margin-bottom: auto;
+}
